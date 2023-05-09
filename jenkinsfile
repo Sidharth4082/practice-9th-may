@@ -1,0 +1,27 @@
+pipeline
+{
+    agent any 
+    stages {
+
+        stage('test')
+        {
+            steps {
+                echo 'this is test stage'
+            } 
+
+        }
+        stage('Build')
+        {
+            steps {
+                echo 'this is Build stage'
+            }
+
+        }
+        stage('Regression test')
+        {
+            steps {
+                echo "this is regression testing stage"
+            }
+        }
+    }
+}
